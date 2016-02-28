@@ -1,16 +1,7 @@
 /* ----------------------------------------------------------------------------
- * Copyright &copy; 2016 Ben Blazak <bblazak@fullerton.edu>
- * Released under the [MIT License] (http://opensource.org/licenses/MIT)
- * ------------------------------------------------------------------------- */
-
-/**
- * Class representing a neighborhood (represented as an array) of `Shape`s.
- *
- * Notes:
- * - We use `exit(1)` here for errors.  Later, we'll go over exceptions, which
- *   would be a much better solution.
- */
-
+* Copyright &copy; 2016 Hunter Straub <Hunterstraub@csu.fullerton.edu>
+* Released under the [MIT License] (http://opensource.org/licenses/MIT)
+* ------------------------------------------------------------------------- */
 
 #ifndef NEIGHBORHOOD_H
 #define NEIGHBORHOOD_H
@@ -22,12 +13,6 @@
 // ----------------------------------------------------------------------------
 
 class Shape;
-/**
- * Forward declare `Shape`, in case this file gets included first.
- *
- * This is definitely not the cleanest way to do things; but it seems to me
- * right now to be the simplest.
- */
 
 // ----------------------------------------------------------------------------
 
@@ -87,9 +72,7 @@ class Neighborhood {
 	                   move(x, y);
                 std::this_thread::sleep_for(std::chrono::milliseconds(100));
             }
-
         }
-
 };
 
 // ----------------------------------------------------------------------------
