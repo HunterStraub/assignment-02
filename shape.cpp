@@ -1,11 +1,8 @@
 /* ----------------------------------------------------------------------------
- * Copyright &copy; 2016 YOUR_NAME <YOUR_EMAIL>
+ * Copyright &copy; 2016 Hunter Straub <Hunterstraub@csu.fullerton.edu>
  * Released under the [MIT License] (http://opensource.org/licenses/MIT)
  * ------------------------------------------------------------------------- */
 
-/**
- * Implements `shape.h`.
- */
 #include "neighborhood.h"
 #include "shape.h"
 bool Shape::isHappy(const Neighborhood & n,
