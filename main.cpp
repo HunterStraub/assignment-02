@@ -1,14 +1,8 @@
 /* ----------------------------------------------------------------------------
- * Copyright &copy; 2016 Ben Blazak <bblazak@fullerton.edu>
- * Released under the [MIT License] (http://opensource.org/licenses/MIT)
- * ------------------------------------------------------------------------- */
+* Copyright &copy; 2016 Hunter Straub <Hunterstraub@csu.fullerton.edu>
+* Released under the [MIT License] (http://opensource.org/licenses/MIT)
+* ------------------------------------------------------------------------- */
 
-/**
- * Tying everything together.
- *
- * Notes:
- * - We also include our test functions here, since there aren't that many.
- */
 #include "buffer.h"
 #include "constants.h"
 #include "neighborhood.h"
@@ -68,18 +62,12 @@ void test_shape() {
 
 // ----------------------------------------------------------------------------
 
-/**
- * Notes:
- * - Comment out the parts you aren't currently using.
- */
 int main() {
 	test_buffer();
 
     // ------------------------------------------------------------------------
 	test_shape();
-
     // ------------------------------------------------------------------------
-
     // animate  neighborhood
     unsigned int size_x = TERM_SIZE_X/Shape::size_x;
     unsigned int size_y = TERM_SIZE_Y/Shape::size_y;
