@@ -1,27 +1,14 @@
 /* ----------------------------------------------------------------------------
- * Copyright &copy; 2016 YOUR_NAME <YOUR_EMAIL>
- * Released under the [MIT License] (http://opensource.org/licenses/MIT)
- * ------------------------------------------------------------------------- */
-
-/**
- * Implements of `neighborhood.h`.
- */
+* Copyright &copy; 2016 Hunter Straub <Hunterstraub@csu.fullerton.edu>
+* Released under the [MIT License] (http://opensource.org/licenses/MIT)
+* ------------------------------------------------------------------------- */
 
 #include <random>
-// TODO: `#include`s for other system headers, if necessary
 
 #include "neighborhood.h"
 
-// TODO: `#include`s for other local headers, if necessary
-
 // ----------------------------------------------------------------------------
-// local helper functions
 
-/**
- * Notes:
- * - If you like, you can start reading about what this "unnamed `namespace`"
- *   is for [here](http://www.comeaucomputing.com/techtalk/#nostatic).
- */
 namespace {
 
     /**
@@ -51,7 +38,6 @@ namespace {
 
         return std::uniform_int_distribution<unsigned int>(low, high)(mt);
     }
-
 }
 
 // ----------------------------------------------------------------------------
