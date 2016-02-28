@@ -1,12 +1,7 @@
 /* ----------------------------------------------------------------------------
- * Copyright &copy; 2016 YOUR_NAME <YOUR_EMAIL>
- * Released under the [MIT License] (http://opensource.org/licenses/MIT)
- * ------------------------------------------------------------------------- */
-
-/**
- * Implements `buffer.h`.
- */
-
+* Copyright &copy; 2016 Hunter Straub <Hunterstraub@csu.fullerton.edu>
+* Released under the [MIT License] (http://opensource.org/licenses/MIT)
+* ------------------------------------------------------------------------- */
 
 #include "buffer.h"
 
