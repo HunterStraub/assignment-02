@@ -1,19 +1,8 @@
 /* ----------------------------------------------------------------------------
- * Copyright &copy; 2016 Ben Blazak <bblazak@fullerton.edu>
- * Released under the [MIT License] (http://opensource.org/licenses/MIT)
- * ------------------------------------------------------------------------- */
+* Copyright &copy; 2016 Hunter Straub <Hunterstraub@csu.fullerton.edu>
+* Released under the [MIT License] (http://opensource.org/licenses/MIT)
+* ------------------------------------------------------------------------- */
 #include "constants.h"
-/**
- * Class implementing an arbitrarily sized 2D character buffer, in which we may
- * draw before outputting the information to the terminal.
- *
- * This way, we don't have to draw characters in order from left to right, then
- * top to bottom.
- *
- * Notes:
- * - We use `exit(1)` here for errors.  Later, we'll go over exceptions, which
- *   would be a much better solution.
- */
 
 #ifndef BUFFER_H
 #define BUFFER_H
@@ -28,20 +17,6 @@
 class Buffer {
     private:
         char * data_;
-        /**
-         * Our character data.
-         *
-         * Since we don't know how big the array will be, we can't use a
-         * regular (stack allocated) array.  In the constructor, this will be
-         * initialized to a 1D array large enough to hold all the values, and
-         * we will emulate using it as a 2D array by taking the index as
-         * ```
-         * data_[ y * size_x + x ];
-         * ```
-         * (where, if it were a real 2D array, we could have said
-         * `data_[y][x]`).
-         */
-
 
     public:
         const unsigned int size_x = TERM_SIZE_X;
@@ -91,10 +66,6 @@ class Buffer {
 				std::cout << std::endl;
 			}
 		}
-        /**
-         * Output the contents of the buffer to `cout`.
-         */
-
 
     void clear()
 	{
